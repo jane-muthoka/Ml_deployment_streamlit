@@ -8,8 +8,8 @@ import numpy as np
 #from tensorflow.keras.layers import Dense
 
 #loading the model
-model=Sequential()
-model.load_model('model.json')
+model = load_model('model.json')  # Load the Keras model
+
 
 def predict(GRE_Score, TOEFL_Score, University_Rating, SOP, LOR, CGPA, Research):
     # Create a DataFrame with the input data
