@@ -19,6 +19,10 @@ def predict(GRE_Score, TOEFL_Score, University_Rating, SOP, LOR, CGPA, Research)
         columns=["GRE Score", "TOEFL Score", "University Rating", "SOP", "LOR", "CGPA", "Research"]
     )
 
+ # Make prediction using the loaded model
+    prediction = model.predict(input_data)
+    return prediction
+
 st.title('Predicting Graduate admission')#title
 st.markdown('This model predicts the chances of admit into a school')#description
 
