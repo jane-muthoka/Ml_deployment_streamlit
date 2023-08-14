@@ -2,10 +2,18 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from prediction import predict
+import tensorflow
+from tensorflow import keras
+from tensorflow.keras import Sequential
+from tensorflow.keras.layers import Dense
+
+#loading the model
+model=Sequential()
+model.load_model('model.json')
 
 #defining the prediction function
-def predict(GRE Score,TOEFL Score,University Rating,SOP,LOR, CGPA,Research):
-    prediction = model.predict(pd.DataFrame([[GRE Score,TOEFL Score,University Rating,SOP,LOR, CGPA,Research]], columns=[GRE Score,TOEFL Score,University Rating,SOP,LOR, CGPA,Research]))
+def predict(GRE_Score,TOEFL_Score,University_Rating,SOP,LOR, CGPA,Research):
+    prediction = model.predict(pd.DataFrame([[GRE_Score,TOEFL_Score,University_Rating,SOP,LOR, CGPA,Research]], columns=[GRE Score,TOEFL Score,University Rating,SOP,LOR, CGPA,Research])
     return prediction
 
 
