@@ -25,9 +25,9 @@ st.header("Prerequisites")
 
 #defining the user inputs
 
-GRE Score = st.number_input('GRE Score:',min_value=0.1, max_value=100.0, value=1.0)
-TOEFL Score = st.number_input('TOEFL Score:',min_value=0.1, max_value=100.0, value=1.0)
-University Rating = st.number_input('University Rating:',min_value=0.1, max_value=100.0, value=1.0)
+GRE_Score = st.number_input('GRE Score:',min_value=0.1, max_value=100.0, value=1.0)
+TOEFL_Score = st.number_input('TOEFL Score:',min_value=0.1, max_value=100.0, value=1.0)
+University_Rating = st.number_input('University Rating:',min_value=0.1, max_value=100.0, value=1.0)
 SOP = st.number_input('SOP:',min_value=0.1, max_value=100.0, value=1.0)
 LOR = st.number_input('LOR:',min_value=0.1, max_value=100.0, value=1.0)
 CGPA = st.number_input('CGPA:',min_value=0.1, max_value=100.0, value=1.0)
