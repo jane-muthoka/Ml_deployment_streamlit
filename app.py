@@ -39,7 +39,7 @@ Research = st.number_input('Research:',min_value=0.1, max_value=1.0, value=1.0)
 #button
 if st.button("Predict chance of Admit"):
     Chance_of_Admit = predict(
-        np.array([[GRE_Score,TOEFL_Score,University_Rating,SOP,LOR, CGPA,Research]]))
+        np.array([["GRE Score", "TOEFL Score", "University Rating", "SOP", "LOR", "CGPA", "Research"]]))
     st.success(f'The chance of admit is {result[0]:.2f} ')
 
 
