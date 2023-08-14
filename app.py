@@ -2,10 +2,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 #from prediction import predict
-import tensorflow
-from tensorflow import keras
-from tensorflow.keras import Sequential
-from tensorflow.keras.layers import Dense
+#import tensorflow
+#from tensorflow import keras
+#from tensorflow.keras import Sequential
+#from tensorflow.keras.layers import Dense
 
 #loading the model
 model=Sequential()
