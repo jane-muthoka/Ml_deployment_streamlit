@@ -11,11 +11,12 @@ from tensorflow.keras.layers import Dense
 model=Sequential()
 model.load_model('model.json')
 
-#defining the prediction function
-def predict(GRE_Score,TOEFL_Score,University_Rating,SOP,LOR, CGPA,Research):
-    prediction = model.predict(pd.DataFrame([[GRE_Score,TOEFL_Score,University_Rating,SOP,LOR, CGPA,Research]], columns=[GRE Score,TOEFL Score,University Rating,SOP,LOR, CGPA,Research])
-    return prediction
-
+def predict(GRE_Score, TOEFL_Score, University_Rating, SOP, LOR, CGPA, Research):
+    # Create a DataFrame with the input data
+    input_data = pd.DataFrame(
+        [[GRE_Score, TOEFL_Score, University_Rating, SOP, LOR, CGPA, Research]],
+        columns=["GRE Score", "TOEFL Score", "University Rating", "SOP", "LOR", "CGPA", "Research"]
+    )
 
 st.title('Predicting Graduate admission')#title
 st.markdown('This model predicts the chances of admit into a school')#description
