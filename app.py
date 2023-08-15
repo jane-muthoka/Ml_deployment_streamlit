@@ -9,7 +9,7 @@ from tensorflow.keras.models import load_model
 #from tensorflow.keras.layers import Dense
 
 #loading the model
-model = load_model('model.json')  # Load the Keras model
+model = load_model('model.h5')  # Load the Keras model
 
 
 def predict(GRE_Score, TOEFL_Score, University_Rating, SOP, LOR, CGPA, Research):
